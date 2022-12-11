@@ -46,7 +46,7 @@ good = ["good", "great"]
 outstanding = ["outstanding"]
 absolutely = ["absolutely"]
 looks = ["looks"]
-
+shorts = []
 def reply():
     global counter
     replied = False
@@ -82,7 +82,7 @@ def reply():
             print(username_replied_to)
             gimmick_accounts = ['crim_tweets_', 'insanepplYT', 'insultsrare', 'weirdreviewss', 'YearbookQuotes_', 'fuckedupfoods', 'InternetH0F', 'strangepacks', 'HelpingChads', 'strangepacks_']
             onlyfanswomen = ['Nothennyfr', 'arabcnnie', 'iUsedToBeADuck', 'pokegff']
-            generic = general + shorts
+            generic = general
             mike = ["Thank you mike for your amazing reply", "Every time I see a reply of you my day immediatelly gets better. Thank you so much.", "Your dedication to provide amazing explanations is outstanding. Keep it up!"]
             if not username_replied_to and not strings:
                 if username == "anythingbott":
@@ -340,7 +340,7 @@ try:
     #if id>stored_id:
     #    store_last_seen(FILE_NAME,id)
     #    
-    #i = read_last_seen("counter.txt")
+    i = read_last_seen("counter.txt")
     
     while True:
         if i==600:
