@@ -314,14 +314,14 @@ try:
     #media = api.media_upload(dir + "\\" + image)
     #message = random.choice(texts)
     #client.create_tweet(text=message, media_ids=[media.media_id])
-    time = datetime.now(timezone.utc)-timedelta(hours=1)
-    tweets = client.get_home_timeline(exclude=['retweets'],start_time=time)
-    id = next(reversed(tweets[0])).id-1
-    stored_id = read_last_seen(FILE_NAME)
-    if id>stored_id:
-        store_last_seen(FILE_NAME,id)
-    print(tweets)
-    print(id)
+    #time = datetime.now(timezone.utc)-timedelta(hours=1)
+    #tweets = client.get_home_timeline(exclude=['retweets'],start_time=time)
+    #id = next(reversed(tweets[0])).id-1
+    #stored_id = read_last_seen(FILE_NAME)
+    #if id>stored_id:
+    #    store_last_seen(FILE_NAME,id)
+    #print(tweets)
+    #print(id)
     
     while True:
         reply()
