@@ -90,7 +90,6 @@ def reply():
                         strings = [message]
                     strings = strings + ["Not anything", "This is anything", "Looks like anything to me! Nice!", "This is anything! Well done!"]
                 else:
-                    strings = general
                     g = []
                     match username:
                         case "StokeyyG2" | "nocontextfooty" | "firecrackergirI" | "ishowspeedsui" | "UTDTrey":
