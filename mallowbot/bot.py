@@ -36,7 +36,7 @@ def store_last_seen(FILE_NAME, last_seen_id):
     return #return void
     
     
-girls = ['Meiko', 'Smurfette', 'Dark Arle', 'Splash Woman', 'Lana', 'Crona', 'Hinomori Shizuku', 'Ganyu', 'Mipha', 'Rainbow Dash', 'Asuka', 'Akiyama Mizuki', 'Yor Forger', 'Femboys', 'a cat girlfriend', 'Kizuna Ai', 'Sage', 'Mii Fighter', 'Catgirl', 'Maki Harukawa', 'Doki Doki Literature Club', '2B', 'Basil', 'Nepgear', 'Yotsuba','Sunstar', 'Luisa Madrigal', 'Zone-Tan', 'Molly', 'Kazama Iroha', 'Klee', 'Monika', 'Cylindria', 'Inkling Boy', 'gang pull up', "Inkling girl"]
+girls = ['Meiko', 'Smurfette', 'Dark Arle', 'Splash Woman', 'Lana', 'Crona', 'Hinomori Shizuku', 'Ganyu', 'Mipha', 'Rainbow Dash', 'Asuka', 'Akiyama Mizuki', 'Yor Forger', 'Femboys', 'a cat girlfriend', 'Kizuna Ai', 'Sage', 'Mii Fighter', 'Catgirl', 'Maki Harukawa', 'Doki Doki Literature Club', '2B', 'Basil', 'Nepgear', 'Yotsuba','Sunstar', 'Luisa Madrigal', 'Zone-Tan', 'Molly', 'Kazama Iroha', 'Klee', 'Monika', 'Cylindria', 'Inkling Boy', 'gang pull up', "Inkling girl", "Uzaki Chan"]
 general=["Ratio", "Massive W", "Massive L", "I used to be a huge fan of you. Unfortunately your recent posts felt a bit off. Hopefully you can improve again in the future", "Seems like a W to me", "Seems like an L to me", "If you want to keep a loyal follower I suggest you to improve your post"]
 
 time = datetime.now()-timedelta(hours=1)
@@ -239,6 +239,8 @@ def reply():
                             g = ["Reddit always tells the truth", "Reddit never lies"]
                         case "tragicbirdapp":
                             g = ["Not a tragic bird app post"]
+                        case "PoorlyAgedThings":
+                            g = ["This aged greatly", "Aged perfectly fine"]
             else:
                 match username:
                     case "mike27356894":
@@ -276,7 +278,7 @@ def reply():
                 print(strings)
                 print()
                 message = random.choice(strings)
-                message = message.format(authorname = name)
+                message = message.format(authorname = name, absolutely="absolutely")
                 try:
                     client.like(tweet.id)
                 except Exception as e:
@@ -315,8 +317,8 @@ try:
     #message = random.choice(texts)
     #client.create_tweet(text=message, media_ids=[media.media_id])
     time = datetime.now(timezone.utc)-timedelta(hours=1)
-    tweets = client.get_home_timeline(end_time=time, max_results=1)
-    id = next(reversed(tweets[0])).id
+    tweets = client.get_home_timeline(end_time=time, max_results=2)
+    id = tweets[0][0].id
     stored_id = read_last_seen(FILE_NAME)
     if id>stored_id:
         store_last_seen(FILE_NAME,id)

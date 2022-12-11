@@ -39,7 +39,7 @@ def store_last_seen(FILE_NAME, last_seen_id):
     return #return void
     
     
-girls = ['Meiko', 'Smurfette', 'Dark Arle', 'Splash Woman', 'Lana', 'Crona', 'Hinomori Shizuku', 'Ganyu', 'Mipha', 'Rainbow Dash', 'Asuka', 'Akiyama Mizuki', 'Yor Forger', 'Femboys', 'a cat girlfriend', 'Kizuna Ai', 'Sage', 'Mii Fighter', 'Catgirl', 'Maki Harukawa', 'Doki Doki Literature Club', '2B', 'Basil', 'Nepgear', 'Yotsuba','Sunstar', 'Luisa Madrigal', 'Zone-Tan', 'Molly', 'Kazama Iroha', 'Klee', 'Monika', 'Cylindria', 'Inkling Boy', 'gang pull up', "Inkling girl"]
+girls = ['Meiko', 'Smurfette', 'Dark Arle', 'Splash Woman', 'Lana', 'Crona', 'Hinomori Shizuku', 'Ganyu', 'Mipha', 'Rainbow Dash', 'Asuka', 'Akiyama Mizuki', 'Yor Forger', 'Femboys', 'a cat girlfriend', 'Kizuna Ai', 'Sage', 'Mii Fighter', 'Catgirl', 'Maki Harukawa', 'Doki Doki Literature Club', '2B', 'Basil', 'Nepgear', 'Yotsuba','Sunstar', 'Luisa Madrigal', 'Zone-Tan', 'Molly', 'Kazama Iroha', 'Klee', 'Monika', 'Cylindria', 'Inkling Boy', 'gang pull up', "Inkling girl", "Uzaki Chan"]
 unfollow = ["A loyal follower will be gone from you", "I have to reevaluate my loyal followership to you", "a long time follower might leave", "you will lose a trustwothy follower who enjoyed your content for years", "A long time follower who enjoyed your great content is about to leave", "I might have to reevaluate my close followership to your account which used to be {great}", "Maybe I should meditate my followership to your amazing content", "my followership is at stake", "My following might be reviewed in the future", "my followership might need a reevaluation", "I should rethink my loyal followership to you"]
 general=["Not sure if this is an {authorname} post. I might have to unfollow", "I remember the times when you posted {good} stuff", "I really like this post! Would be even better if it was good", "Do you remember the great times when you posted good stuff? Me neither", "Finally, a {authorname} post", "I really liked your older posts much more. I would be very happy if you achieve that level of greatness again. Or I have to reevaluate my loyal followership to you", "You will lose an amazing follower unless you improve your content"]
 good = ["good", "great"]
@@ -253,8 +253,12 @@ def reply():
                             strings = generic + ["This is a pretty interesting map. But like average", "Whether this is an amazing map might be written on another paper. However, {unfollow}", "This is an amazing map! Nice! Good post!"]
                         case "TerribleFinance":
                             strings = generic + ["In my humble opinion, finance is always amazing", "That is an {absolutely] perfectly fine finance to me. {looks} good"]
+                        case "PoorlyAgedThings":
+                            strings = ["This aged greatly", "Aged perfectly fine"]
                         case _:
                             strings = []
+
+
 
                     print(strings)
                     print()
