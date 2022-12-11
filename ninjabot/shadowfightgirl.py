@@ -313,7 +313,7 @@ def reply():
 def random_porn():
     
     texts = ["I like her so much", "Why does she look so hot?", "I'm in love", "She's looks so beautiful", "She looks so hot"]
-    dir = 'C:\\Users\Julian\Pictures\Shadowfightgirls'
+    dir = 'Shadowfightgirls'
     try:
         image = random.choice(os.listdir(dir))
         print(image)
