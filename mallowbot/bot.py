@@ -36,7 +36,7 @@ def store_last_seen(FILE_NAME, last_seen_id):
     return #return void
     
     
-girls = ['Meiko', 'Smurfette', 'Dark Arle', 'Splash Woman', 'Lana', 'Crona', 'Hinomori Shizuku', 'Ganyu', 'Mipha', 'Rainbow Dash', 'Asuka', 'Akiyama Mizuki', 'Yor Forger', 'Femboys', 'a cat girlfriend', 'Kizuna Ai', 'Sage', 'Mii Fighter', 'Catgirl', 'Maki Harukawa', 'Doki Doki Literature Club', '2B', 'Basil', 'Nepgear', 'Yotsuba','Sunstar', 'Luisa Madrigal', 'Zone-Tan', 'Molly', 'Kazama Iroha', 'Klee', 'Monika', 'Cylindria', 'Inkling Boy', 'gang pull up', "Inkling girl", "Uzaki Chan"]
+girls = ['Meiko', 'Smurfette', 'Dark Arle', 'Splash Woman', 'Lana', 'Crona', 'Hinomori Shizuku', 'Ganyu', 'Mipha', 'Rainbow Dash', 'Asuka', 'Akiyama Mizuki', 'Yor Forger', 'Femboys', 'a cat girlfriend', 'Kizuna Ai', 'Sage', 'Mii Fighter', 'Catgirl', 'Maki Harukawa', 'Doki Doki Literature Club', '2B', 'Basil', 'Nepgear', 'Yotsuba','Sunstar', 'Luisa Madrigal', 'Zone-Tan', 'Molly', 'Kazama Iroha', 'Klee', 'Monika', 'Cylindria', 'Inkling Boy', 'gang pull up', "Inkling girl", "Uzaki Chan", "Mami Tomoe"]
 general=["Ratio", "Massive W", "Massive L", "I used to be a huge fan of you. Unfortunately your recent posts felt a bit off. Hopefully you can improve again in the future", "Seems like a W to me", "Seems like an L to me", "If you want to keep a loyal follower I suggest you to improve your post"]
 
 time = datetime.now()-timedelta(hours=1)
