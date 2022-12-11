@@ -44,7 +44,7 @@ time = datetime.now()-timedelta(hours=1)
 def reply():
     last_id=read_last_seen(FILE_NAME)
 
-    tweets = client.get_home_timeline(since_id=read_last_seen(FILE_NAME), exclude=['retweets'], tweet_fields=['author_id', 'in_reply_to_user_id', 'attachments', 'entities'], start_time=time)
+    tweets = client.get_home_timeline(since_id=read_last_seen(FILE_NAME), exclude=['retweets'], tweet_fields=['author_id', 'in_reply_to_user_id', 'attachments', 'entities'])
     
     if tweets[0]:
         print(tweets[0])
@@ -330,8 +330,8 @@ try:
 except KeyboardInterrupt:
     
     print('KeyboardInterrupt')
-    print("Value of i: " + str(i))
-    store_last_seen("counter.txt", i)
+    #print("Value of i: " + str(i))
+    #store_last_seen("counter.txt", i)
     #client.delete_tweet(id=temptweetid)
     sys.exit(0)
    

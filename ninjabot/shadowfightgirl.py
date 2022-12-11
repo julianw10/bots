@@ -291,6 +291,7 @@ def reply():
                 print("Exclude IDs:" + str(exclude_ids))
             if strings:
                 print(strings)
+                print(tweet.text)
                 print()
                 message = random.choice(strings)
                 message = message.format(authorname = name, absolutely=random.choice(absolutely), looks=random.choice(looks), good=random.choice(good))
@@ -338,8 +339,7 @@ try:
     id = next(reversed(tweets[0])).id
     stored_id = read_last_seen(FILE_NAME)
     if id>stored_id:
-        store_last_seen(FILE_NAME,id)
-        
+        store_last_seen(FILE_NAME,id)        
     i = read_last_seen("counter.txt")
     
     while True:
