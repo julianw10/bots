@@ -207,6 +207,7 @@ def reply():
                         case "depthsofwiki":
                             strings = strings + ["This is the surface of Wikipedia", "This is pretty normal Wikipedia stuff. {unfollow}", "This entry would be better with a good amount of niceness"]
                         case "ShitpostGate":
+                            strings = strings.remove("Not sure if this is an {authorname} post. I might have to unfollow")
                             strings = strings + ["This is a gateway to something else", "This is a normalpost", "{looks} like a {absolutely} normal post to me", "Everything is right with this post!", "Amazing meme! I like it very much!"]
                         case "TheGimmickAcc":
                             strings = strings + ["I think this precedes to an event which has too much positive attention", "This preceded to good stuff!", "This image {looks} {absolutely} fine to me and {absolutely} lead to only few things", "This {looks} to be a {absolutely} nice image to me. {unfollow}"]
